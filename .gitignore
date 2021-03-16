@@ -1,0 +1,10 @@
+CommonDomain/bin
+CommonDomain/obj
+
+DbEmployees/bin
+DbEmployees/obj
+ExampleVue/obj
+ExampleVue/bin
+
+ServiceLayer/obj
+ServiceLayer/bin

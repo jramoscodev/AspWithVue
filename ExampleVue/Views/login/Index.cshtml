@@ -1,0 +1,55 @@
+﻿@model CommonDomain.ViewModels.LoginViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+
+    ViewBag.Title = "Index";
+
+}
+
+<div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="login-logo mr-5">
+                @*<a href="javascript:void(0)"><img src="https://www.google.com/images/icons/material/product/1x/analytics_64dp.png" alt="My Ad Cubes"></a>*@
+                @*<a href="javascript:void(0)"><img style="margin-left: -84px;" width="200" height="40"src="@Url.Content("~/Content/logo.svg")" alt="Banco Atlantida"></a>*@
+
+            </div><!-- /.login-logo -->
+
+            @using (Html.BeginForm("Index", "Login", new { }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+        <div class="form-group" style="margin-top:15px">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control col-lg-12", @placeholder = "Usuario" })
+            </div>
+            @Html.ValidationMessageFor(m => m.UserName, null, new { @class = "col-lg-12 ErrorMessage" })
+            <div class="input-group" style="margin-top:5px;">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control col-lg-12", @placeholder = "Contraseña" })
+
+            </div>
+            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "col-lg-12 ErrorMessage" })
+
+        </div>
+
+
+
+                @Html.ValidationSummary(true)
+
+                <button type="submit" class="btn btn-success">Login</button>
+            }
+
+        </div>
+
+    </div>
+    
+   
+
+</div>
+
+<style>
+    .ErrorMessage {
+        color:red;
+    }
+</style>
