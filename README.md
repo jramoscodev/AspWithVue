@@ -5,10 +5,10 @@
 
 
 ## Abrir Solucion, desde el proyecto ExampleVue
-![alt text](./Capture.png)
+![alt text](./Capture.PNG)
 
 ## Seleccionar ExampleVue.sln
-![alt text](./Capture2.png)
+![alt text](./Capture2.PNG)
 
 ## Restaurar base de datos FirstCode
 desde la consola de nuget( esta se encuentra en Tools->Nuget package Manager -> Nuget package Manager Console )
@@ -18,7 +18,7 @@ se debe ejecutar el siguiente comando
 Update-Database
 ```
 
-![alt text](./Capture3.png)
+![alt text](./Capture3.PNG)
 
 
 luego de esto se puede ejecutar la aplicacion dando al boton de run
