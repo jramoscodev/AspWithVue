@@ -1,7 +1,7 @@
-#Requisitos
- ### visual studio 2019
- ### .net framework 4.7
- ### sql Manager
+# Requisitos
+ * visual studio 2019
+ * net framework 4.7
+ * sql Manager
 
 
 ## Abrir Solucion, desde el proyecto ExampleVue
