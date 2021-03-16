@@ -17,6 +17,7 @@ se debe ejecutar el siguiente comando
 ```bash
 Update-Database
 ```
+debe de fijarse que Package source este en All y Default Project este en DbEmployees
 
 ![alt text](./Capture3.PNG)
 
